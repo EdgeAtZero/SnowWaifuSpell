@@ -1,0 +1,13 @@
+{
+  "spell.snowwaifuspell.summon_snow_queen": "雪之誓约",
+  "spell.snowwaifuspell.summon_snow_queen.guide": "召唤冰雪女王。",
+  "entity.snowwaifuspell.summoned_snow_queen": "雪の嫁",
+  "message.snowwaifuspell.sit": "雪の嫁已坐下",
+  "message.snowwaifuspell.stand": "雪の嫁已站起",
+  "message.snowwaifuspell.teleport_and_sit": "雪の嫁已被召唤到脚下并坐下",
+  "item.snowwaifuspell.snow_queen_soul": "冰雪女王的灵魂",
+  "item.snowwaifuspell.snowqueensoul.desc1": "蕴含着冰雪女王之力的灵魂",
+  "item.snowwaifuspell.snowqueensoul.desc2": "其中的黑暗已被净化，使用后可获得三级经验与冰雪女王卷轴",
+  "item.snowwaifuspell.snowqueensoul.lore1": "“在洁白的雪中，她拥抱黑暗”",
+  "item.snowwaifuspell.snowqueensoul.lore2": "“在死亡的寂静中，她重获新生”"
+}
