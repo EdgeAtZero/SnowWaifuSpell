@@ -1,0 +1,14 @@
+{
+  "spell.snowwaifuspell.summon_snow_queen": "Snowbound Oath",
+  "spell.snowwaifuspell.summon_snow_queen.guide": "Summon Snow Queen.",
+  "entity.snowwaifuspell.summoned_snow_queen": "Snow Waifu",
+  "effect.snowwaifuspell.snow_waifu_timer": "Snowbound Oath",
+  "message.snowwaifuspell.sit": "Snow Waifu is now sitting",
+  "message.snowwaifuspell.stand": "Snow Waifu is now standing",
+  "message.snowwaifuspell.teleport_and_sit": "Snow Waifu has been teleported and sat down",
+  "item.snowwaifuspell.snow_queen_soul": "Snow Queen Soul",
+  "item.snowwaifuspell.snowqueensoul.desc1": "A soul imbued with the power of the Snow Queen",
+  "item.snowwaifuspell.snowqueensoul.desc2": "Its darkness has been purified. Use to gain Level III XP and a spell scroll to command her",
+  "item.snowwaifuspell.snowqueensoul.lore1": "\"In the pure white snow, she embraces the darkness\"",
+  "item.snowwaifuspell.snowqueensoul.lore2": "\"In the silence of death, she is reborn\""
+}
