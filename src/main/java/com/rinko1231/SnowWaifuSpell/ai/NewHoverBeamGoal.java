@@ -13,7 +13,7 @@ import java.util.Optional;
 
 public class NewHoverBeamGoal extends HoverBaseGoal<SummonedSnowQueen> {
     public NewHoverBeamGoal(SummonedSnowQueen snowQueen, int hoverTime) {
-        super(snowQueen, 5.0F, hoverTime);
+        super(snowQueen, 4.0F, hoverTime);
         this.setFlags(EnumSet.of(Flag.MOVE, Flag.LOOK));
     }
 
@@ -59,7 +59,7 @@ public class NewHoverBeamGoal extends HoverBaseGoal<SummonedSnowQueen> {
     }
 
     private void updateHoverPosition(LivingEntity target) {
-        final double horizontalOffset = 6.0 + this.attacker.getRandom().nextDouble() * 3.0;
+        final double horizontalOffset = 5.0 + this.attacker.getRandom().nextDouble() * 3.0;
         final double verticalOffset   = 4.0 + this.attacker.getRandom().nextDouble() * 2.0;
 
         Vec3 toTarget = target.position().subtract(this.attacker.position()).normalize();
