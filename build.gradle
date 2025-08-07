@@ -127,9 +127,9 @@ dependencies {
     runtimeOnly "curse.maven:appleskin-248787:6616291"
 
     //runtimeOnly "curse.maven:mo-enchantments-621282:6509664"
-    //runtimeOnly "curse.maven:lendercataclysm-551586:6720987"
+    implementation "curse.maven:lendercataclysm-551586:6720987"
     implementation "curse.maven:curios-309927:6529130"
-    //implementation "curse.maven:lionfish-api-1001614:6168249"
+    implementation "curse.maven:lionfish-api-1001614:6168249"
 
     implementation "curse.maven:the-twilight-forest-227639:6472889"
 
