@@ -6,6 +6,7 @@ import com.rinko1231.SnowWaifuSpell.model.SummonedSnowQueenModel;
 import com.rinko1231.SnowWaifuSpell.renderer.NewSummonedSnowQueenRenderer;
 import com.rinko1231.SnowWaifuSpell.renderer.SummonedSnowQueenRenderer;
 import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.resources.ResourceLocation;
 
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,13 +33,13 @@ public class ModClientEvents {
 
     @SubscribeEvent
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-        final BooleanSupplier jappa = JappaPackReloadListener.INSTANCE.uncachedJappaPackCheck();
-        event.registerEntityRenderer(
-                ModEntityRegistry.SUMMONED_SNOW_QUEEN.get(),
-                !jappa.getAsBoolean() ?
-                        c -> new SummonedSnowQueenRenderer(c, new SummonedSnowQueenModel(c.bakeLayer(SNOW_WAIFU_LAYER))) :
-                        c -> new NewSummonedSnowQueenRenderer(c, new NewSummonedSnowQueenModel(c.bakeLayer(NEW_SNOW_WAIFU_LAYER)))
-        );
+        BooleanSupplier jappa = JappaPackReloadListener.INSTANCE.uncachedJappaPackCheck();
+       event.registerEntityRenderer(ModEntityRegistry.SUMMONED_SNOW_QUEEN.get(),
+               (m) ->
+                       !jappa.getAsBoolean() ?
+                               new SummonedSnowQueenRenderer(m, new SummonedSnowQueenModel(m.bakeLayer(SNOW_WAIFU_LAYER))) :
+                               new NewSummonedSnowQueenRenderer(m, new NewSummonedSnowQueenModel(m.bakeLayer(NEW_SNOW_WAIFU_LAYER))));
+
     }
 
     @SubscribeEvent
